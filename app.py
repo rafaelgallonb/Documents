@@ -36,7 +36,7 @@ def calculate_rmse(actual, predicted):
     return sqrt(mean_squared_error(actual, predicted))
 
 # Carregar e preparar os dados.
-file_path = 'C:\Users\rafae\Documents\ipea.csv'  # Substitua pelo caminho correto se necessário
+file_path = 'ipea.csv'  # Substitua pelo caminho correto se necessário
 df = prepare_data(file_path)
 price_series = df['Preço - petróleo bruto - Brent (FOB)']
 
