@@ -23,7 +23,7 @@ def test_stationarity(series):
 # Função para encontrar os melhores parâmetros ARIMA.
 def optimize_arima(series):
     auto_model = auto_arima(series, start_p=0, start_q=0,
-                            max_p=10, max_q=10, m=12,
+                            max_p=5, max_q=5, m=6,
                             seasonal=False,
                             d=None, trace=False,  # trace=True para ver o progresso
                             error_action='ignore',  
